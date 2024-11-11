@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Digital-Waves/static/css/main.e740a28b.css",
+    "main.js": "/Digital-Waves/static/js/main.b4cf6586.js",
+    "static/js/453.e57ff67c.chunk.js": "/Digital-Waves/static/js/453.e57ff67c.chunk.js",
+    "index.html": "/Digital-Waves/index.html",
+    "main.e740a28b.css.map": "/Digital-Waves/static/css/main.e740a28b.css.map",
+    "main.b4cf6586.js.map": "/Digital-Waves/static/js/main.b4cf6586.js.map",
+    "453.e57ff67c.chunk.js.map": "/Digital-Waves/static/js/453.e57ff67c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e740a28b.css",
+    "static/js/main.b4cf6586.js"
+  ]
+}
