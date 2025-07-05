@@ -4,17 +4,70 @@ function Cl() {
   const [selectedClientIndex, setSelectedClientIndex] = useState(0);
 
   const clients = [
-    { name: "Ash Couture", logo: "images/ashcouture.png", url: "https://www.ashcouture.com/", description: "ASH COUTURE is a clothing brand offering customized Western and Indo-Western fashion, managed by @ashmeettakkar04.", rating: 4.3 },
-    { name: "Simran Luther Makeup Artist", logo: "images/simranluther.png", url: "https://www.simranluthermakeup.com/", description: "Simran Luther is a bridal makeup artist based in Jalandhar, providing customized makeup services.", rating: 4.5 },
-    { name: "J.K. Public Sr. Sec. School", logo: "images/jkpublicschool.png", url: "https://www.jkpublicschool.com/", description: "Educating, inspiring, and nurturing young minds for a brighter tomorrow.", rating: 4.4 },
-    { name: "BrightMedia", logo: "images/brightmedia.png", url: "https://www.brightmedia.com/", description: "BrightMedia specializes in digital content creation and marketing for startups.", rating: 4.2 },
-    { name: "SocialVibe", logo: "images/socialvibe.png", url: "https://www.socialvibe.io/", description: "SocialVibe is a boutique agency focused on social media management for local businesses.", rating: 4.4 },
-    { name: "EcoBrand Solutions", logo: "images/ecobrand.png", url: "https://www.ecobrandsolutions.com/", description: "EcoBrand offers eco-friendly branding and marketing solutions for small businesses.", rating: 4.5 },
-    { name: "TechReach", logo: "images/techreach.png", url: "https://www.techreach.net/", description: "TechReach specializes in digital advertising for tech startups and SaaS products.", rating: 4.3 },
-    { name: "InstaBoost", logo: "images/instaboost.png", url: "https://www.instaboost.com/", description: "InstaBoost helps small businesses grow their Instagram presence with tailored strategies.", rating: 4.6 },
-    { name: "NextGen Creatives", logo: "images/nextgen.png", url: "https://www.nextgencreatives.com/", description: "NextGen provides creative content and video marketing for niche brands.", rating: 4.7 }
-  ];
-
+  {
+    name: "Ash Couture",
+    logo: `${process.env.PUBLIC_URL}/images/ashcouture.png`,
+    url: "https://www.ashcouture.com/",
+    description: "ASH COUTURE is a clothing brand offering customized Western and Indo-Western fashion, managed by @ashmeettakkar04.",
+    rating: 4.3,
+  },
+  {
+    name: "Simran Luther Makeup Artist",
+    logo: `${process.env.PUBLIC_URL}/images/simranluther.png`,
+    url: "https://www.simranluthermakeup.com/",
+    description: "Simran Luther is a bridal makeup artist based in Jalandhar, providing customized makeup services.",
+    rating: 4.5,
+  },
+  {
+    name: "J.K. Public Sr. Sec. School",
+    logo: `${process.env.PUBLIC_URL}/images/jkpublicschool.png`,
+    url: "https://www.jkpublicschool.com/",
+    description: "Educating, inspiring, and nurturing young minds for a brighter tomorrow.",
+    rating: 4.4,
+  },
+  {
+    name: "BrightMedia",
+    logo: `${process.env.PUBLIC_URL}/images/brightmedia.png`,
+    url: "https://www.brightmedia.com/",
+    description: "BrightMedia specializes in digital content creation and marketing for startups.",
+    rating: 4.2,
+  },
+  {
+    name: "SocialVibe",
+    logo: `${process.env.PUBLIC_URL}/images/socialvibe.png`,
+    url: "https://www.socialvibe.io/",
+    description: "SocialVibe is a boutique agency focused on social media management for local businesses.",
+    rating: 4.4,
+  },
+  {
+    name: "EcoBrand Solutions",
+    logo: `${process.env.PUBLIC_URL}/images/ecobrand.png`,
+    url: "https://www.ecobrandsolutions.com/",
+    description: "EcoBrand offers eco-friendly branding and marketing solutions for small businesses.",
+    rating: 4.5,
+  },
+  {
+    name: "TechReach",
+    logo: `${process.env.PUBLIC_URL}/images/techreach.png`,
+    url: "https://www.techreach.net/",
+    description: "TechReach specializes in digital advertising for tech startups and SaaS products.",
+    rating: 4.3,
+  },
+  {
+    name: "InstaBoost",
+    logo: `${process.env.PUBLIC_URL}/images/instaboost.png`,
+    url: "https://www.instaboost.com/",
+    description: "InstaBoost helps small businesses grow their Instagram presence with tailored strategies.",
+    rating: 4.6,
+  },
+  {
+    name: "NextGen Creatives",
+    logo: `${process.env.PUBLIC_URL}/images/nextgen.png`,
+    url: "https://www.nextgencreatives.com/",
+    description: "NextGen provides creative content and video marketing for niche brands.",
+    rating: 4.7,
+  },
+];
   const clientsToShow = clients.slice(selectedClientIndex, selectedClientIndex + 2);
 
   const next = () => {

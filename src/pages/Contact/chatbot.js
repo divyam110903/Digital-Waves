@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyDNQmJVa1g9Ix3av8qe1ftNy-4BGdXbxms"; 
-
+const API_KEY = process.env.REACT_APP_API_KEY ;
 const ChatApp = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
@@ -14,7 +13,7 @@ const ChatApp = () => {
 
   const generateResponse = async (userMessage) => {
     const genAI = new GoogleGenerativeAI(API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
     try {
       const chat = model.startChat();
@@ -73,7 +72,7 @@ const ChatApp = () => {
             </button>
           </div>
 
-          {/* Messages */}
+      
           <div className="flex-1 p-4 space-y-4 overflow-y-auto bg-white">
             {messages.map((msg, idx) => (
               <div 

@@ -4,22 +4,22 @@ function Whatwedo() {
     const items = [
         {
             title: "Web Development",
-            icon: "images/web.png",
-            description: "Web development is the work involved in developing a website for the Internet or an intranet."
+            icon: `${process.env.PUBLIC_URL}/images/web.png`,
+            description: "Web development is the work involved in developing a website for the Internet or an intranet.",
         },
         {
             title: "Video Marketing",
-            icon: "images/video.png",
+            icon: `${process.env.PUBLIC_URL}/images/video.png`,
             description: "Video marketing involves creating and promoting video content to engage and educate target audiences, increasing brand awareness and conversions."
         },
         {
             title: "Digital Marketing",
-            icon: "images/digital-marketing.png",
+            icon: `${process.env.PUBLIC_URL}/images/digital-marketing.png`,
             description: "Digital marketing is the work involved in developing a digital marketing strategy and developing a digital marketing plan."
         },
         {
             title: "Graphic Design",
-            icon: "images/digital-drawing.png",
+             icon: `${process.env.PUBLIC_URL}/images/digital-drawing.png`,
             description: "Graphic design is the craft of creating visual content to communicate messages."
         }
     ];
