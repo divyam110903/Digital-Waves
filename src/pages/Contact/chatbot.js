@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+const akey = process.env.API_KEY;
+
 const API_KEY = akey; 
 
 const ChatApp = () => {
