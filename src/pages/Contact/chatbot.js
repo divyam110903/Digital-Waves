@@ -3,7 +3,7 @@ import { MessageCircle, X, Send } from 'lucide-react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 
-const API_KEY = "AIzaSyDNQmJVa1g9Ix3av8qe1ftNy-4BGdXbxms"; 
+const API_KEY = process.env.API_KEY; 
 
 const ChatApp = () => {
   const [isOpen, setIsOpen] = useState(false);
